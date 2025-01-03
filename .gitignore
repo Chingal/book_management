@@ -1,0 +1,100 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# pycharm #
+######################
+.idea/
+.idea/*
+.idea
+*.pyc
+
+# nginx #
+######################
+.directory
+
+# env files #
+#####################
+.env
+.env.bak
+/.env
+/venv
+env/
+.env/
+venv/
+.venv/
+builds/
+
+# vs code #
+#####################
+.vscode/
+.vscode/*
+~/.vscode-root/
+settings.json
+secretnotes.md
+imports/lib/
+public/fonts/
+
+# workbench #
+#####################
+*.mwb.bak
+*.mwb.bak/
+
+# project #
+#####################
+
+db.sqlite3
+*.py[cod]
+app/client
+app/media
+
+*.yml
+*.yaml
+backend/celerybeat-schedule
+celerybeat-schedule
+db-data
+db_data
+mongo/data
+redis-data
+
+__pycache__
+.coverage
+/.coverage
+/htmlcov/
+/backend/htmlcov/
+
+# static files #
+#####################
+app/backend/static/
