@@ -80,7 +80,7 @@ db.sqlite3
 app/client
 app/media
 
-*.yml
+#*.yml
 *.yaml
 backend/celerybeat-schedule
 celerybeat-schedule
