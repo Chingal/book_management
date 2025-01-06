@@ -18,7 +18,7 @@ class Command(BaseCommand):
 
         for _ in range(10):
             book_data = BookSchema(
-                title=faker.sentence(nb_words=10),
+                title=faker.sentence(nb_words=5),
                 author=faker.name(),
                 published_date=faker.date_this_century(),
                 genre=random.choice(["Fiction", "Non-fiction", "Fantasy", "Biography", "Mystery", "Science Fiction", "Romance"]),
