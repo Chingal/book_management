@@ -30,7 +30,6 @@ class CustomLoginView(APIView):
             return {'error': 'Password field is required'}
         return None
 
-
     @swagger_auto_schema(
         request_body=LoginSerializer,
         responses={
