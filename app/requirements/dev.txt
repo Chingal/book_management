@@ -8,5 +8,7 @@ flake8
 isort
 pytest
 pytest-cov
+pytest-django
+pytest-mock
 pytest-xdist
 ipython
