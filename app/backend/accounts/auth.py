@@ -16,6 +16,8 @@ def authenticate(username, password):
     """
     try:
         user = User.objects.get(username=username)
+        if not user:
+            return None
     except Exception:
         return None
 
