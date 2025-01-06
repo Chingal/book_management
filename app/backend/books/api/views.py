@@ -19,10 +19,10 @@ class BookListView(ListCreateAPIView):
     """
     View to list all books with optional filtering and pagination
     """
-    #authentication_classes = [CustomTokenAuthentication]
+    authentication_classes = [CustomTokenAuthentication]
     name = 'Book List'
     pagination_class = CustomPageNumberPagination
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     serializer_class = BookSerializer
 
     def get_queryset(self):
@@ -44,11 +44,11 @@ class BookRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     """
     API view to retrieve details, update and destroy of a specific book
     """
-    #authentication_classes = [CustomTokenAuthentication]
+    authentication_classes = [CustomTokenAuthentication]
     name = 'Manage Book APIView'
     manager = BookManager()
     pagination_class = CustomPageNumberPagination
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
     serializer_class = BookSerializer
 
     def get_queryset(self):
@@ -90,10 +90,10 @@ class AveragePriceAPIView(APIView):
     """
     API View to calculate the average price of books for a given year.
     """
-    #authentication_classes = [CustomTokenAuthentication]
+    authentication_classes = [CustomTokenAuthentication]
     name = 'Average price'
     manager = BookManager()
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, year, version=None):
         """
