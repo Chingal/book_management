@@ -1,0 +1,9 @@
+.idea/
+__pycache__
+.dockerignore
+dockerfiles/
+.git/
+.pytest_cache
+.coverage
+/backend/htmlcov/
+/htmlcov/
