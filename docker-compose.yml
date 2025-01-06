@@ -1,0 +1,46 @@
+version: "3"
+
+services:
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "3016:80"
+    volumes:
+      - ./app/static:/app/static
+    depends_on:
+      - app
+
+  redis:
+    image: redis:6.2-alpine
+    restart: "unless-stopped"
+    command: redis-server
+    ports:
+      - "6379"
+
+  mongodb:
+    image: mongo
+    restart: always
+    volumes:
+      - ./db_data:/data/db
+    env_file: .env
+    ports:
+      - 27017:27017
+
+  app:
+    image: book-management-app
+    build:
+      context: ./app
+      dockerfile: dockerfiles/django.Dockerfile
+      args:
+        - DJANGO_ENV=dev
+    env_file: .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: on-failure
+    volumes:
+      - ./app:/app
+    ports:
+      - 8007:8007
+    depends_on:
+      - mongodb
