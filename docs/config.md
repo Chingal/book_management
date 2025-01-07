@@ -35,11 +35,11 @@ Once the file is copied, you can proceed with building the Docker image and then
 
 `docker-compose up -d --build`
 
-![Docker Build](../img/docker_build.png?raw=true "Docker build")
+![Docker Build](./img/docker-build.png?raw=true "Docker build")
 
 After running that command, you will see something similar to this:
 
-![Docker Up](../img/docker-up.png?raw=true "Docker Up")
+![Docker Up](./img/docker-up.png?raw=true "Docker Up")
 
 
 If everything goes well, we can visit [http://0.0.0.0:3016/](http://0.0.0.0:3016/ "http://0.0.0.0:3016/") where our app is hosted, and we will be able to see the API documentation.
