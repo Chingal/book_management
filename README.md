@@ -13,8 +13,8 @@ The backend code is located inside the **backend** folder.
 > * Model
 >   * [Diagram](#model)
 > * Configuration
->   * [Project](#config)
->   * [Commands](#config)
+>   * [Project](#configuration)
+>   * [Commands](#configuration)
 > * Testing
 >   * [Pytest](#testing)
 
@@ -36,3 +36,8 @@ The backend code is located inside the **backend** folder.
 ### Model
 
 ![model](docs/img/arq.png?raw=true "Arquitectura")
+
+### Configuration
+
+- [Project](docs/config.md)
+- [Commands](docs/commands.md)
