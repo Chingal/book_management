@@ -26,7 +26,7 @@ The backend code is located inside the **backend** folder.
 * [Python 3.10: ](https://www.python.org/ "View documentation") Programming language.
 * [Django: ](https://www.djangoproject.com/ "View documentation") Django requirement packages are listed in the requirements.txt file.
 * [Pytest: ](https://docs.pytest.org// "View documentation") A Python framework that simplifies writing and executing unit and integration tests
-* [MongoDB: ](https://www.postgresql.org/ "View documentation") User credentials are stored in the environment variable file named .env.
+* [MongoDB: ](https://www.mongodb.com/ "View documentation") User credentials are stored in the environment variable file named .env.
 
 
 ### Technical Requirements to Run the Backend
