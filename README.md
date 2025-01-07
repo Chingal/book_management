@@ -41,3 +41,7 @@ The backend code is located inside the **backend** folder.
 
 - [Project](docs/config.md)
 - [Commands](docs/commands.md)
+
+### Testing
+
+- [Pytest](docs/pytest.md)
